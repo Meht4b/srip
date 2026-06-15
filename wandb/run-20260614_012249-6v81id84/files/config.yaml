@@ -1,0 +1,88 @@
+_wandb:
+    value:
+        cli_version: 0.27.2
+        e:
+            gv7pmlhcww6xs7v06sd95ca1d4inup3a:
+                args:
+                    - --method
+                    - ia3
+                    - --n_samples
+                    - "10"
+                    - --dataset
+                    - bc5cdr
+                codePath: train_peft.py
+                codePathLocal: train_peft.py
+                cpu_count: 8
+                cpu_count_logical: 12
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "509722226688"
+                        used: "423039983616"
+                email: mehthabunstoppable@gmail.com
+                executable: C:\Users\sayan\miniconda3\envs\kgpeft311\python.exe
+                gpu: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2560
+                      memoryTotal: "6442450944"
+                      name: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+                      uuid: GPU-87fc8de5-79f5-6e4f-e614-73d712a7b897
+                host: Sayanth
+                memory:
+                    total: "16873545728"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\sayan\mehthab\train_peft.py
+                python: CPython 3.11.15
+                root: C:\Users\sayan\mehthab
+                startedAt: "2026-06-13T19:52:49.192617Z"
+                writerId: gv7pmlhcww6xs7v06sd95ca1d4inup3a
+        m: []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 53
+                - 71
+                - 98
+            "2":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 53
+                - 71
+                - 98
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.11.15
+            "5": 0.27.2
+            "6": 4.41.0
+            "8":
+                - 3
+            "12": 0.27.2
+            "13": windows-amd64
+batch_size:
+    value: 4
+dataset:
+    value: bc5cdr
+epochs:
+    value: 5
+lora_r:
+    value: 8
+lr:
+    value: 0.0002
+method:
+    value: ia3
+model:
+    value: microsoft/biogpt
+n_samples:
+    value: "10"
+seed:
+    value: 42

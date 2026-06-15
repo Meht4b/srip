@@ -1,0 +1,46 @@
+
+[Setup] Loading tokenizer...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioGPT for PREFIX...
+trainable params: 983,040 || all params: 347,746,304 || trainable%: 0.28268884203583083
+Epoch 1/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.27it/s]
+Epoch 1/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:59<00:00,  2.09it/s]
+
+Epoch 1: Loss=20.5853 | F1=0.0397 | Prec=0.0225 | Rec=0.1717 | EHR=0.8707
+    ✓ Saved best checkpoint (F1=0.0397) → ./checkpoints\prefix_r8_bc5cdr_n10_seed42
+Epoch 2/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.68it/s]
+Epoch 2/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:01<00:00,  2.03it/s]
+
+Epoch 2: Loss=20.5982 | F1=0.0400 | Prec=0.0226 | Rec=0.1726 | EHR=0.8706
+    ✓ Saved best checkpoint (F1=0.0400) → ./checkpoints\prefix_r8_bc5cdr_n10_seed42
+Epoch 3/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.70it/s]
+Epoch 3/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:00<00:00,  2.05it/s]
+
+Epoch 3: Loss=20.3230 | F1=0.0399 | Prec=0.0226 | Rec=0.1719 | EHR=0.8711
+Epoch 4/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.82it/s]
+Epoch 4/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:03<00:00,  1.96it/s]
+
+Epoch 4: Loss=20.2711 | F1=0.0401 | Prec=0.0227 | Rec=0.1726 | EHR=0.8708
+    ✓ Saved best checkpoint (F1=0.0401) → ./checkpoints\prefix_r8_bc5cdr_n10_seed42
+Epoch 5/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.11it/s]
+Epoch 5/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:46<00:00,  1.17it/s]
+
+Epoch 5: Loss=20.4163 | F1=0.0402 | Prec=0.0227 | Rec=0.1729 | EHR=0.8711
+    ✓ Saved best checkpoint (F1=0.0402) → ./checkpoints\prefix_r8_bc5cdr_n10_seed42
+
+[Final] Evaluating on test set...
+Testing: 100%|███████████████████████████████████████████████████████████████████████| 125/125 [01:08<00:00,  1.82it/s]
+
+============================================================
+FINAL TEST RESULTS — prefix_r8_bc5cdr_n10_seed42
+F1:    0.0432
+Prec:  0.0243
+Rec:   0.1928
+EHR:   0.8796
+Checkpoint saved at: ./checkpoints\prefix_r8_bc5cdr_n10_seed42
+============================================================
+Results saved → ./checkpoints\prefix_r8_bc5cdr_n10_seed42\results.json

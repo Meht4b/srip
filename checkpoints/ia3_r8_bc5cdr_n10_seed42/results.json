@@ -1,0 +1,13 @@
+{
+  "run_name": "ia3_r8_bc5cdr_n10_seed42",
+  "method": "ia3",
+  "lora_r": 8,
+  "dataset": "bc5cdr",
+  "n_samples": "10",
+  "seed": 42,
+  "test_f1": 0.04262295081967213,
+  "test_prec": 0.023911875335840944,
+  "test_rec": 0.1959688346883469,
+  "test_ehr": 0.8703973029438369,
+  "checkpoint": "./checkpoints\\ia3_r8_bc5cdr_n10_seed42"
+}

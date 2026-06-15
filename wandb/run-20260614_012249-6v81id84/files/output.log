@@ -1,0 +1,44 @@
+
+[Setup] Loading tokenizer...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioGPT for IA3...
+trainable params: 49,152 || all params: 346,812,416 || trainable%: 0.014172502982130835
+Epoch 1/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.68it/s]
+Epoch 1/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:51<00:00,  2.44it/s]
+
+Epoch 1: Loss=24.2485 | F1=0.0441 | Prec=0.0249 | Rec=0.1956 | EHR=0.8647
+    ✓ Saved best checkpoint (F1=0.0441) → ./checkpoints\ia3_r8_bc5cdr_n10_seed42
+Epoch 2/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.90it/s]
+Epoch 2/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:49<00:00,  2.53it/s]
+
+Epoch 2: Loss=24.3249 | F1=0.0442 | Prec=0.0249 | Rec=0.1960 | EHR=0.8648
+    ✓ Saved best checkpoint (F1=0.0442) → ./checkpoints\ia3_r8_bc5cdr_n10_seed42
+Epoch 3/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  2.13it/s]
+Epoch 3/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:47<00:00,  2.66it/s]
+
+Epoch 3: Loss=24.2010 | F1=0.0442 | Prec=0.0249 | Rec=0.1960 | EHR=0.8648
+Epoch 4/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  2.15it/s]
+Epoch 4/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:47<00:00,  2.62it/s]
+
+Epoch 4: Loss=24.3491 | F1=0.0442 | Prec=0.0249 | Rec=0.1960 | EHR=0.8647
+Epoch 5/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  2.13it/s]
+Epoch 5/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:48<00:00,  2.57it/s]
+
+Epoch 5: Loss=24.2487 | F1=0.0442 | Prec=0.0249 | Rec=0.1960 | EHR=0.8647
+
+[Final] Evaluating on test set...
+Testing: 100%|███████████████████████████████████████████████████████████████████████| 125/125 [00:48<00:00,  2.58it/s]
+
+============================================================
+FINAL TEST RESULTS — ia3_r8_bc5cdr_n10_seed42
+F1:    0.0426
+Prec:  0.0239
+Rec:   0.1960
+EHR:   0.8704
+Checkpoint saved at: ./checkpoints\ia3_r8_bc5cdr_n10_seed42
+============================================================
+Results saved → ./checkpoints\ia3_r8_bc5cdr_n10_seed42\results.json

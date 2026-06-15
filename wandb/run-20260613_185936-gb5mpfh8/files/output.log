@@ -1,0 +1,19 @@
+
+[Setup] Loading tokenizer...
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioMistral-7B for LORA...
+Traceback (most recent call last):
+  File "C:\Users\sayan\mehthab\train_peft.py", line 574, in <module>
+    main()
+  File "C:\Users\sayan\mehthab\train_peft.py", line 498, in main
+    model = load_model(args.method, NUM_LABELS)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\mehthab\train_peft.py", line 325, in load_model
+    model = AutoModelForTokenClassification.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\transformers\models\auto\auto_factory.py", line 566, in from_pretrained
+    raise ValueError(
+ValueError: Unrecognized configuration class <class 'transformers.models.mistral.configuration_mistral.MistralConfig'> for this kind of AutoModel: AutoModelForTokenClassification.
+Model type should be one of AlbertConfig, BertConfig, BigBirdConfig, BioGptConfig, BloomConfig, BrosConfig, CamembertConfig, CanineConfig, ConvBertConfig, Data2VecTextConfig, DebertaConfig, DebertaV2Config, DistilBertConfig, ElectraConfig, ErnieConfig, ErnieMConfig, EsmConfig, FalconConfig, FlaubertConfig, FNetConfig, FunnelConfig, GPT2Config, GPT2Config, GPTBigCodeConfig, GPTNeoConfig, GPTNeoXConfig, IBertConfig, LayoutLMConfig, LayoutLMv2Config, LayoutLMv3Config, LiltConfig, LongformerConfig, LukeConfig, MarkupLMConfig, MegaConfig, MegatronBertConfig, MobileBertConfig, MPNetConfig, MptConfig, MraConfig, MT5Config, NezhaConfig, NystromformerConfig, PhiConfig, Phi3Config, QDQBertConfig, RemBertConfig, RobertaConfig, RobertaPreLayerNormConfig, RoCBertConfig, RoFormerConfig, SqueezeBertConfig, T5Config, UMT5Config, XLMConfig, XLMRobertaConfig, XLMRobertaXLConfig, XLNetConfig, XmodConfig, YosoConfig.

@@ -1,0 +1,44 @@
+
+[Setup] Loading tokenizer...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioGPT for LORA...
+trainable params: 786,432 || all params: 347,549,696 || trainable%: 0.22627900672944337
+Epoch 1/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:03<00:00,  1.05s/it]
+Epoch 1/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:55<00:00,  2.24it/s]
+
+Epoch 1: Loss=23.9938 | F1=0.0439 | Prec=0.0247 | Rec=0.1948 | EHR=0.8647
+    ✓ Saved best checkpoint (F1=0.0439) → ./checkpoints\lora_r8_bc5cdr_n10_seed42
+Epoch 2/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.64it/s]
+Epoch 2/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [00:58<00:00,  2.15it/s]
+
+Epoch 2: Loss=23.8851 | F1=0.0440 | Prec=0.0248 | Rec=0.1951 | EHR=0.8642
+    ✓ Saved best checkpoint (F1=0.0440) → ./checkpoints\lora_r8_bc5cdr_n10_seed42
+Epoch 3/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.63it/s]
+Epoch 3/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:10<00:00,  1.77it/s]
+
+Epoch 3: Loss=23.2049 | F1=0.0438 | Prec=0.0247 | Rec=0.1941 | EHR=0.8647
+Epoch 4/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.56it/s]
+Epoch 4/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:24<00:00,  1.48it/s]
+
+Epoch 4: Loss=23.1460 | F1=0.0436 | Prec=0.0246 | Rec=0.1935 | EHR=0.8646
+Epoch 5/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.54it/s]
+Epoch 5/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:21<00:00,  1.53it/s]
+
+Epoch 5: Loss=22.8145 | F1=0.0436 | Prec=0.0245 | Rec=0.1933 | EHR=0.8645
+
+[Final] Evaluating on test set...
+Testing: 100%|███████████████████████████████████████████████████████████████████████| 125/125 [01:24<00:00,  1.49it/s]
+
+============================================================
+FINAL TEST RESULTS — lora_r8_bc5cdr_n10_seed42
+F1:    0.0423
+Prec:  0.0237
+Rec:   0.1944
+EHR:   0.8726
+Checkpoint saved at: ./checkpoints\lora_r8_bc5cdr_n10_seed42
+============================================================
+Results saved → ./checkpoints\lora_r8_bc5cdr_n10_seed42\results.json

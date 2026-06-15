@@ -1,0 +1,18 @@
+
+[Setup] Loading tokenizer...
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioMistral-7B for LORA...
+trainable params: 3,407,872 || all params: 7,245,139,968 || trainable%: 0.04703666202518836
+Epoch 1/5 [Train]:   0%|                                                                                    | 0/2 [00:00<?, ?it/s]C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+Epoch 1/5 [Train]: 100%|███████████████████████████████████████████████████████████████████████████| 2/2 [13:34<00:00, 407.04s/it]
+Epoch 1/5 [Val]: 100%|█████████████████████████████████████████████████████████████████████████| 63/63 [4:31:38<00:00, 258.70s/it]
+
+Epoch 1: Loss=24.0696 | F1=0.0405 | Prec=0.0230 | Rec=0.1699 | EHR=0.8624
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+    ✓ Saved best checkpoint (F1=0.0405) → ./checkpoints\lora_r8_bc5cdr_n10_seed42
+Epoch 2/5 [Train]: 100%|███████████████████████████████████████████████████████████████████████████| 2/2 [16:13<00:00, 486.51s/it]
+Epoch 2/5 [Val]:   0%|                                                                                     | 0/63 [00:00<?, ?it/s]

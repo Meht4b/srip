@@ -1,0 +1,13 @@
+{
+  "run_name": "qlora_r8_bc5cdr_n10_seed42",
+  "method": "qlora",
+  "lora_r": 8,
+  "dataset": "bc5cdr",
+  "n_samples": "10",
+  "seed": 42,
+  "test_f1": 0.04227504557087883,
+  "test_prec": 0.023715578325448797,
+  "test_rec": 0.19444444444444445,
+  "test_ehr": 0.8725609246823981,
+  "checkpoint": "./checkpoints\\qlora_r8_bc5cdr_n10_seed42"
+}

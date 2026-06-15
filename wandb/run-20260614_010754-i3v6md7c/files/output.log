@@ -1,0 +1,43 @@
+
+[Setup] Loading tokenizer...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioGPT for ADALORA...
+trainable params: 1,180,224 || all params: 347,943,536 || trainable%: 0.3391998637388108
+Epoch 1/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.08it/s]
+Epoch 1/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:02<00:00,  2.00it/s]
+
+Epoch 1: Loss=25.3354 | F1=0.0442 | Prec=0.0249 | Rec=0.1958 | EHR=0.8647
+    ✓ Saved best checkpoint (F1=0.0442) → ./checkpoints\adalora_r8_bc5cdr_n10_seed42
+Epoch 2/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.43it/s]
+Epoch 2/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:02<00:00,  1.98it/s]
+
+Epoch 2: Loss=25.2253 | F1=0.0442 | Prec=0.0249 | Rec=0.1958 | EHR=0.8648
+Epoch 3/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.61it/s]
+Epoch 3/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:01<00:00,  2.02it/s]
+
+Epoch 3: Loss=24.9107 | F1=0.0442 | Prec=0.0249 | Rec=0.1958 | EHR=0.8648
+Epoch 4/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.68it/s]
+Epoch 4/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:02<00:00,  2.01it/s]
+
+Epoch 4: Loss=25.3085 | F1=0.0442 | Prec=0.0249 | Rec=0.1958 | EHR=0.8648
+Epoch 5/5 [Train]: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.63it/s]
+Epoch 5/5 [Val]: 100%|███████████████████████████████████████████████████████████████| 125/125 [01:04<00:00,  1.95it/s]
+
+Epoch 5: Loss=25.2549 | F1=0.0442 | Prec=0.0249 | Rec=0.1958 | EHR=0.8648
+
+[Final] Evaluating on test set...
+Testing: 100%|███████████████████████████████████████████████████████████████████████| 125/125 [01:01<00:00,  2.04it/s]
+
+============================================================
+FINAL TEST RESULTS — adalora_r8_bc5cdr_n10_seed42
+F1:    0.0427
+Prec:  0.0240
+Rec:   0.1963
+EHR:   0.8704
+Checkpoint saved at: ./checkpoints\adalora_r8_bc5cdr_n10_seed42
+============================================================
+Results saved → ./checkpoints\adalora_r8_bc5cdr_n10_seed42\results.json

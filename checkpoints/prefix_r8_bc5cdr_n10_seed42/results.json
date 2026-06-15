@@ -1,0 +1,13 @@
+{
+  "run_name": "prefix_r8_bc5cdr_n10_seed42",
+  "method": "prefix",
+  "lora_r": 8,
+  "dataset": "bc5cdr",
+  "n_samples": "10",
+  "seed": 42,
+  "test_f1": 0.04317474770468169,
+  "test_prec": 0.0243100059813723,
+  "test_rec": 0.19275067750677508,
+  "test_ehr": 0.8796421233307457,
+  "checkpoint": "./checkpoints\\prefix_r8_bc5cdr_n10_seed42"
+}

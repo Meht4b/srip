@@ -1,0 +1,21 @@
+
+[Setup] Loading tokenizer...
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioMistral-7B for LORA...
+trainable params: 3,407,872 || all params: 7,245,139,968 || trainable%: 0.04703666202518836
+Epoch 1/5 [Train]:   0%|                                                                                    | 0/2 [00:00<?, ?it/s]C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+Epoch 1/5 [Train]: 100%|███████████████████████████████████████████████████████████████████████████| 2/2 [13:47<00:00, 413.54s/it]
+Epoch 1/5 [Val]:   0%|                                                                                     | 0/63 [04:39<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\sayan\mehthab\train_peft.py", line 560, in <module>
+    main()
+  File "C:\Users\sayan\mehthab\train_peft.py", line 487, in main
+    best_f1 = train(model, train_loader, val_loader, tokenizer)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\mehthab\train_peft.py", line 415, in train
+    pred_list.append(ID2LABEL[p.item()])
+                     ~~~~~~~~^^^^^^^^^^
+KeyError: 539

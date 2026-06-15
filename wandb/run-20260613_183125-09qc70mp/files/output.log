@@ -1,0 +1,14 @@
+[1/4] Loading scispaCy...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\spacy\language.py:2195: FutureWarning: Possible set union at position 6328
+  deserializers["tokenizer"] = lambda p: self.tokenizer.from_disk(  # type: ignore[union-attr]
+[2/4] Loading BioMistral-7B in 4-bit...
+    Model loaded ✓
+[3/4] Loading BC5CDR test set...
+    Loaded 50 test samples ✓
+[4/4] Running zero-shot inference...
+Evaluating: 100%|█████████████████████████████████████████████████████████████████████████████████| 50/50 [05:00<00:00,  6.01s/it]
+
+==================================================
+ZERO-SHOT BASELINE RESULTS on BC5CDR (50 samples)
+Mean Entity Hallucination Rate: 0.6902 (69.02%)
+==================================================

@@ -1,0 +1,40 @@
+[Setup] Loading scispaCy...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\spacy\language.py:2195: FutureWarning: Possible set union at position 6328
+  deserializers["tokenizer"] = lambda p: self.tokenizer.from_disk(  # type: ignore[union-attr]
+[Setup] Loading tokenizer...
+[Setup] Loading dataset...
+  Train: 10 | Val (eval 50): 50 | Test (eval 50): 50
+
+[Model] Loading BioMistral-7B in 4-bit for LORA...
+trainable params: 3,407,872 || all params: 7,245,139,968 || trainable%: 0.04703666202518836
+  Epoch 1 [Train]:   0%|                                                                         | 0/5 [00:00<?, ?it/s]C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+  Epoch 1 [Train]: 100%|████████████████████████████████████████████████████████████████| 5/5 [28:12<00:00, 338.51s/it]
+  [val]: 100%|█████████████████████████████████████████████████████████████████████████| 50/50 [46:01<00:00, 55.23s/it]
+  Epoch 1: Loss=nan | F1=0.0793 | EHR=0.3466
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  ✓ Checkpoint saved → ./checkpoints\lora_r8_bc5cdr_n10_seed42
+  Epoch 2 [Train]: 100%|████████████████████████████████████████████████████████████████| 5/5 [28:17<00:00, 339.51s/it]
+  [val]: 100%|█████████████████████████████████████████████████████████████████████████| 50/50 [34:11<00:00, 41.02s/it]
+  Epoch 2: Loss=nan | F1=0.1392 | EHR=0.7760
+  ✓ Checkpoint saved → ./checkpoints\lora_r8_bc5cdr_n10_seed42
+  Epoch 3 [Train]: 100%|████████████████████████████████████████████████████████████████| 5/5 [28:15<00:00, 339.12s/it]
+  [val]: 100%|█████████████████████████████████████████████████████████████████████████| 50/50 [32:49<00:00, 39.38s/it]
+  Epoch 3: Loss=0.6892 | F1=0.1598 | EHR=0.7862
+  ✓ Checkpoint saved → ./checkpoints\lora_r8_bc5cdr_n10_seed42
+
+[Final] Test evaluation...
+  [test]: 100%|████████████████████████████████████████████████████████████████████████| 50/50 [33:06<00:00, 39.73s/it]
+
+============================================================
+FINAL RESULTS — lora_r8_bc5cdr_n10_seed42
+F1:   0.1547
+EHR:  0.8001
+Prec: 0.1493
+Rec:  0.2082
+Checkpoint: ./checkpoints\lora_r8_bc5cdr_n10_seed42
+============================================================
+Results JSON → ./checkpoints\lora_r8_bc5cdr_n10_seed42/results.json
+[34m[1mwandb[0m: [33mWARNING[0m The get_url method is deprecated and will be removed in a future release. Please use `run.url` instead.
+Wandb       → https://wandb.ai/mehthabunstoppable-vellore-institute-of-technology/kgpeft/runs/garx1ki4

@@ -1,0 +1,14 @@
+[1/4] Loading scispaCy...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\spacy\language.py:2195: FutureWarning: Possible set union at position 6328
+  deserializers["tokenizer"] = lambda p: self.tokenizer.from_disk(  # type: ignore[union-attr]
+[2/4] Loading BioMistral-7B in 4-bit...
+    Model loaded ✓
+[3/4] Loading BC5CDR test set...
+Traceback (most recent call last):
+  File "C:\Users\sayan\mehthab\zero_shot_baseline.py", line 89, in <module>
+    samples = parse_pubtator(test_file)[:MAX_SAMPLES]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\mehthab\zero_shot_baseline.py", line 44, in parse_pubtator
+    with open(filepath, encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\sayan\\mehthab\\kg-peft\\~kg-peft\\data\\bc5cdr\\CDR_Data\\CDR_TestSet_PubTator.txt'

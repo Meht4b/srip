@@ -1,0 +1,38 @@
+
+[Setup] Loading tokenizer...
+C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[Setup] Loading dataset...
+    Train: 10 | Val: 500 | Test: 500
+
+[Model] Loading BioGPT for LORA...
+trainable params: 786,432 || all params: 347,549,696 || trainable%: 0.22627900672944337
+Epoch 1/5 [Train]:   0%|                                                                         | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\sayan\mehthab\train_peft.py", line 557, in <module>
+    main()
+  File "C:\Users\sayan\mehthab\train_peft.py", line 480, in main
+    best_f1 = train(model, train_loader, val_loader, tokenizer)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\mehthab\train_peft.py", line 363, in train
+    for batch in tqdm(train_loader, desc=f"Epoch {epoch+1}/{args.epochs} [Train]"):
+  File "C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\torch\utils\data\dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\sayan\mehthab\train_peft.py", line 243, in __getitem__
+    word_ids    = encoding.word_ids()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sayan\miniconda3\envs\kgpeft311\Lib\site-packages\transformers\tokenization_utils_base.py", line 381, in word_ids
+    raise ValueError(
+ValueError: word_ids() is not available when using non-fast tokenizers (e.g. instance of a `XxxTokenizerFast` class).
